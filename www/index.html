@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+  </head>
+  <body ng-app="starter">
+
+    <ion-pane>
+      <ion-header-bar class="bar-stable">
+        <h1 class="title"> Wine Shop </h1>
+      </ion-header-bar>
+      <ion-content>
+	  <div id="site">
+	<header id="masthead">
+		<h2>Winery <span class="tagline">Wines for web developers since 1999</h2>
+	</header>
+	<div id="content">
+		<div id="products">
+			<ul>
+				<li>
+					<div class="product-image">
+						<img src="images/wine1.jpg" alt="" />
+					</div>
+					<div class="product-description" data-name="Wine #1" data-price="5">
+						<h3 class="product-name">Wine #1</h3>
+						<p class="product-price">&euro; 5</p>
+						<form class="add-to-cart" action="cart.html" method="post">
+							<div>
+								<label for="qty-1">Quantity</label>
+								<input type="text" name="qty-1" id="qty-1" class="qty" value="1" />
+							</div>
+							<p><input type="submit" value="Add to cart" class="btn" /></p>
+						</form>
+					</div>
+				</li>
+				<li>
+					<div class="product-image">
+						<img src="images/wine2.jpg" alt="" />
+					</div>
+					<div class="product-description" data-name="Wine #2" data-price="8">
+						<h3 class="product-name">Wine #2</h3>
+						<p class="product-price">&euro; 8</p>
+						<form class="add-to-cart" action="cart.html" method="post">
+							<div>
+								<label for="qty-2">Quantity</label>
+								<input type="text" name="qty-2" id="qty-2" class="qty" value="1" />
+							</div>
+							<p><input type="submit" value="Add to cart" class="btn" /></p>
+						</form>
+					</div>
+				</li>	
+				<li>
+					<div class="product-image">
+						<img src="images/wine2.jpg" alt="" />
+					</div>
+					<div class="product-description" data-name="Wine #2" data-price="8">
+						<h3 class="product-name">Wine #2</h3>
+						<p class="product-price">&euro; 8</p>
+						<form class="add-to-cart" action="cart.html" method="post">
+							<div>
+								<label for="qty-2">Quantity</label>
+								<input type="text" name="qty-2" id="qty-2" class="qty" value="1" />
+							</div>
+							<p><input type="submit" value="Add to cart" class="btn" /></p>
+						</form>
+					</div>
+				</li>
+			</ul>
+				
+      </ion-content>
+    </ion-pane>
+  </body>
+</html>
